@@ -13,7 +13,7 @@ Funciona con cualquier cuenta de elempleo. Ningún dato personal está escrito e
 Requisitos: Node.js 20 o superior y un navegador basado en Chromium (Chrome, Edge, Brave o Chromium), que solo se usa para iniciar sesión.
 
 ```bash
-git clone <este repositorio> mcp-elempleo
+git clone https://github.com/Jucamhc/mcp-elempleo.git
 cd mcp-elempleo
 npm install
 ```
