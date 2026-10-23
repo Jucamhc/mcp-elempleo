@@ -1,0 +1,51 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Jucamhc/mcp-elempleo",
+  "title": "elempleo",
+  "description": "Busca ofertas, postula y mantiene tu hoja de vida en elempleo.com (Colombia).",
+  "repository": {
+    "url": "https://github.com/Jucamhc/mcp-elempleo",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mcp-elempleo",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "PERFIL_MAESTRO",
+          "description": "Ruta del perfil maestro (JSON) compartido por los MCP de empleo",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        },
+        {
+          "name": "RAIZ_ARCHIVOS",
+          "description": "Base para las rutas relativas de la foto y el CV",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        },
+        {
+          "name": "ELEMPLEO_DATA_DIR",
+          "description": "Carpeta de la sesión, caché y respaldos (por defecto ~/.elempleo)",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        },
+        {
+          "name": "CHROME_PATH",
+          "description": "Ruta del navegador Chromium usado para iniciar sesión",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}
